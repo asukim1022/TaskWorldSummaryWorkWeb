@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>sample</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page_style.css">
+    <script src='http://tinymce.cachefly.net/4.1/tinymce.min.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+
+    <div class="menuDivLoad"></div>
+    <div class="rightPanelLoad"></div>
+    <div class="popupLoad"></div>
+
+    <style>
+        
+	</style>
+     <!--/////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+    <!--////////////////////////메뉴창////////////////////////-->
+    <!--팝업 메세지-->
+    <div class="popupChat_bg"></div>
+    <div class="popupChat_box">
+        <div class="popupChat_header">
+            <h3>메세지</h3>
+            <img src="images/set.png" alt="">
+            <h4><a href="chat.html">대화창으로 가기</a></h4>
+        </div>
+        <div class="popupChat_list">
+            <img src="images/chat_img.png" alt="">
+            <p>Here's where your'll find all your recent messages.</p>
+        </div>
+    </div>
+
+    <!--팝업 사용자-->
+    <div class="popupTeam_box">
+        <ul>
+            <li>
+                <span>A</span>
+                <div>
+                    <h3>userName</h3>
+                    <h4>팀원 관리, 결제, 설정 그 외 더보기</h4>
+                </div>
+            </li>
+        </ul>
+        <div class="popupTeam_workBtn">
+            <img src="images/projectadd_36.png" alt="">
+            <p>새 워크스페이스 만들기</p>
+        </div>
+    </div>
+    <div class="popupTeam_bg"></div>
+
+    <!--팝업 도움말-->
+    <div class="popupHelp_box">
+        <ul>
+            <li>
+                <p>새소식</p>
+            </li>
+            <li>
+                <p>튜토리얼</p>
+            </li>
+            <li>
+                <p>사용자 가이드</p>
+            </li>
+            <li>
+                <p>위크플로우 팁</p>
+            </li>
+            <li>
+                <p>문의하기</p>
+            </li>
+            <li>
+                <p>리뷰 남기기</p>
+            </li>
+        </ul>
+    </div>
+    <div class="popupHelp_bg"></div>
+
+    <div class="bodyDiv"></div>
+    <div class="menuHiddenWrap"></div>
+    <!--//////////////////////// 상단메뉴 ////////////////////////-->
+    <section class="projectMain_menuTop">
+        <!-- 상단메뉴중 파란색부분 -->
+        <div class="menuTop_1">
+
+            <div class="hiddenMenu">
+                <!-- 2017-07-14 -->
+                <img src="images/ic_menu_white_24dp.png" alt="">
+            </div>
+            <div class="newAddMenu">
+                <!-- 2017-07-14 -->
+                <img src="images/ic_close_white_24dp.png" alt="">
+            </div>
+            <!-- 검색 -->
+            <ul class="menuTop_1_ul">
+                <li class="searchBtn">
+                    <img src="images/search_white.png" alt="">
+                </li>
+                <li class="chatBtn">
+                    <img src="images/chatting.png" alt="">
+                </li>
+                <li class="helpBtn">
+                    <img src="images/customerservice.png" alt="">
+                </li>
+                <!-- 프로젝트 이름 영역 (드롭박스) -->
+                <li class="menuTop_1_li newWorkSpaceOpenBtn">
+                    <p>Func</p>
+                    <img src="images/fold_2.png" alt="">
+                </li>
+
+                <!-- 유저이미지 영역 -->
+                <li class="userProfileOpenBtn">
+                    <img src="images/profile_45.png" alt="">
+                </li>
+            </ul>
+
+            <ul class="menuTop_1_ul_hidden">
+                <li class="searchBtn"><img src="images/search_white.png" alt=""></li>
+                <li class="chatBtn"><img src="images/chatting.png" alt=""></li>
+                <li class="helpBtn"><img src="images/alarm.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--//////////////////////// 좌측메뉴 ////////////////////////-->
+    <secton class="menuLeft_hidden">
+        <div>
+            <p>use name</p>
+            <img class="menuLeft_hidden_arrow" src="images/ic_chevron_right_white_24dp.png" alt="">
+            <img class="menuLeft_hidden_useImg" src="images/profile_45.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <img src="images/home.png" alt="">
+                <p>전체 개요</p>
+            </li>
+            <li>
+                <img src="images/projectlist.png" alt="">
+                <p>프로젝트</p>
+            </li>
+            <li>
+                <img src="images/memberlist.png" alt="">
+                <p>멤버</p>
+            </li>
+            <li>
+                <img src="images/chat.png" alt="">
+                <p>대화</p>
+            </li>
+        </ul>
+    </secton>
+
+    <secton class="menuLeft_hidden_bg">
+    </secton>
+
+    <section class="menuLeft_teamPanel">
+        <img class="menuLeft_teamPanel_closeBtn" src="images/projectdelete.png" alt="">
+        <ul>
+            <li>
+                <span>U</span>
+                <h3>userName</h3>
+                <h4>팀원 관리, 결제, 설정 그 외 더보기...</h4>
+            </li>
+            <li>
+                <span>U</span>
+                <h3>userName</h3>
+                <h4>팀원 관리, 결제, 설정 그 외 더보기...</h4>
+            </li>
+        </ul>
+        <div>
+            <img src="images/projectadd_36.png" alt="">
+            <p>새 워크스페이스 만들기</p>
+        </div>
+    </section>
+
+    <section class="menuLeft_userPanel">
+        <img class="menuLeft_userPanel_closeBtn" src="images/projectdelete.png" alt="">
+        <div class="userBox">
+            <div class="menuLeft_userPanel_profileBox">
+                <img src="images/profile_45.png" alt="">
+                <div>
+                    <span></span>
+                    <h3>userName</h3>
+                    <h4>userNmae@naver.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="settingBox">
+            <ul>
+                <li>
+                    <h3>계정 설정</h3>
+                    <h4>프로필, 이메일, 언어, 타임존 그 외 더보기...</h4>
+                </li>
+                <li>
+                    <h3>알림 설정</h3>
+                    <h4>브라우저와 이메일 알림</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="logoutBox">
+            <p>로그아웃</p>
+        </div>
+    </section>
+    <section class="menuLeft_userPanel_bg"></section>
+
+    <section class="projectMain_menuLeft">
+        <div>
+            <div class="menuLeft_hiddenMenu">
+                <p>Func</p>
+                <img src="images/fold_2.png" alt="">
+            </div>
+
+            <ul class="menuLeft_top">
+                <li class="newAddMenu">
+                    <img src="images/ic_close_white_24dp.png" alt="" title="">
+                    <span>새로 만들기</span>
+                </li>
+
+                <li>
+                    <a href="alarm.html">
+                        <img src="images/alarm.png" alt="" title="알림">
+                        <span>알림</span>
+                    </a>
+                </li>
+
+                <!-- 전체보기 메뉴 -->
+                <li>
+                    <a href="summary_work.html">
+                        <img src="images/home.png" alt="" title="전체개요">
+                        <span>전체 개요</span>
+                    </a>
+                </li>
+                <!-- 전체프로젝트 메뉴 -->
+                <!-- li에 클래스 menuLeft_Select을 주면 선택css적용 -->
+                <li class="menuLeft_Select menuLeft_projectBtn">
+                    <a href="project.html">
+                        <img src="images/projectlist.png" alt="" title="프로젝트">
+                        <span>프로젝트</span>
+                    </a>
+                </li>
+                <!-- 채팅 메뉴 -->
+                <li>
+                    <a href="chat.html">
+                        <img src="images/chatting.png" alt="" title="채팅">
+                        <span>채팅</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menuLeft_bottom">
+                <li class="menuLeft_team">
+                    <p class="bottomPanelOpen">F</p>
+                </li>
+                <li class="menuLeft_partner"><img src="images/profile_45.png" alt=""></li>
+                <li class="menuLeft_partner chat_seclect"><img src="images/profile_45.png" alt=""></li>
+                <!-- 새메세지 -->
+                <li class="menuLeft_newMsg"><img src="images/new_chatting.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--    상단 메뉴 새로추가-->
+    <section class="menuTop_add">
+        <div></div>
+        <ul>
+            <li>
+                <img src="images/list.png" alt="">
+                <p>새 업무</p>
+            </li>
+            <li>
+                <img src="images/project.png" alt="">
+                <p>새 프로젝트</p>
+            </li>
+            <li>
+                <img src="images/comment.png" alt="">
+                <p>새 대화 체널</p>
+            </li>
+            <li>
+                <img src="images/member.png" alt="">
+                <p>멤버 초대하기</p>
+            </li>
+        </ul>
+    </section>
+
+    <!--    검색창-->
+    <section class="menuTop_search">
+        <div class="searchBox_bg"></div>
+        <div class="searchBox">
+            <img src="images/back.png" alt="">
+            <input type="text" placeholder="검색">
+        </div>
+    </section>
+
+
+    <!--//////////////////////// 왼쪽 패널 ////////////////////////-->
+    <div class="projectMain_leftPanelDiv">
+        <div class="projectMain_leftPanelWrap">
+            <div>
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="프로젝트 검색하기">
+            </div>
+
+            <!-- 프로젝트 생성 -->
+            <div class="projectMain_leftPanelBox">
+                <div>
+                    <img src="images/fold.png" alt="">
+                    <p>최근 프로젝트()</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_1" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_1"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_1+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_1:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_2" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_2"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_2+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_2:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="projectMain_leftPanelBox">
+                <div>
+                    <img src="images/fold.png" alt="">
+                    <p></p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/public.png" alt="">
+                        <span>프로젝트1</span>
+                        <p class="projectMain_leftPanelBookmark">
+                            <input type='checkbox' class="project_CheckBox" id="projectMain_leftPanel_bookmark_3" />
+                            <label class="project_CheckBoxLable" for="projectMain_leftPanel_bookmark_3"></label>
+                            <style>
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_3+label {
+                                    background: url(images/bookmark_off.png);
+                                }
+                                
+                                input[type=checkbox]#projectMain_leftPanel_bookmark_3:checked+label {
+                                    background: url(images/bookmark_on.png);
+                                }
+
+                            </style>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="projectMain_leftPanel_AllProject"></p>
+        </div>
+    </div>
+
+    <div class="leftDiv_Wrap">
+        <div>
+        </div>
+    </div>
+    <a href="project.html">
+        <div class="leftDiv_left">
+
+            <div class="leftDiv_bottom_1"></div>
+            <div class="leftDiv_bottom_2"></div>
+        </div>
+    </a>
+
+
+    <!--////////////////////////메뉴창////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////////////////////////-->
+
+
+
+    <div class="SummaryHeader">
+        <ul>
+            <li>
+                <a href="summary_work.html">
+                    <p class="SummaryToolbar_seclet">업무</p>
+                    <span class="SummaryToolbar_seclet"></span>
+                </a>
+            </li>
+            <li>
+                <a href="summary_calendar.html">
+                    <p>캘린더</p>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="SummarySection">
+
+        <!-- 왼쪽패널 -->
+
+        <div class="smrySection_menu">
+            <img class="SummaryLeft_CloseBtn" src="images/cancle.png" alt="">
+            <div class="smrySection_menuBox">
+                <h4>기간</h4>
+                <select name="" id="">
+                    <option value="">최근 30일</option>
+                    <option value="">최근 60일</option>
+                    <option value="">최근 90일</option>
+                    <option value="">전체</option>
+                </select>
+            </div>
+
+            <div class="smrySection_menuBox">
+                <div class="control-group">
+                    <label class="control control--radio">내 업무
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--radio">전체 업무
+                        <input type="radio" name="radio" />
+                        <div class="control__indicator"></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="smrySection_menuBox">
+                <h4>빠른 필터</h4>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">나에게 배정된 업무
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">내가 작성한 업무
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">내가 팔로우하는 업무
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="smrySection_menuBox">
+                <div class="smrySection_menuTitleBox">
+                    <img src="images/fold.png" alt="">
+                    <h4>프로젝트</h4>
+                </div>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">
+                            디자인 시안 검토후 최종 승인 받기
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">
+                            다자인/마케팅
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="smrySection_menuBox">
+                <div class="smrySection_menuTitleBox">
+                    <img src="images/fold.png" alt="">
+                    <h4>마감일</h4>
+                </div>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">
+                            업무내용 승인 받기
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">
+                            디자인/마케팅
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="smrySection_menuBox">
+                <div class="smrySection_menuTitleBox">
+                    <img src="images/fold.png" alt="">
+                    <h4>배정된 멤버</h4>
+                </div>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">
+                            PD
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="smrySection_menuBox">
+                <div class="smrySection_menuTitleBox">
+                    <img src="images/fold.png" alt="">
+                    <h4>작성자</h4>
+                </div>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">
+                            PD
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">
+                            lzu
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="smrySection_menuBox smrySection_menuBox_tag">
+                <div class="smrySection_menuTitleBox">
+                    <img src="images/fold.png" alt="">
+                    <h4>태그</h4>
+                </div>
+                <ul>
+                    <li>
+                        <label class="control control--checkbox">
+                            <h5>Task1 testk2 talktje poij ldskTask1 testk2 talktje poij ldskTask1 testk2 talktje poij ldsk</h5>
+                            <span>3</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="control control--checkbox">
+                            <h5>Manager</h5>
+                            <span>04</span>
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <button>필터 전부 선택하기</button>
+        </div>
+
+        <!-- 가운데 컨텐츠영역 -->
+
+        <div class="smrySection_Div">
+            <div class="smrySection_con">
+                <div class="smrySection_nav">
+                    <div class="smrySection_newWorkBtn">
+                        <img src="images/projectadd_36_on.png" alt="">
+                        <p>새 업무</p>
+                    </div>
+
+                    <div class="smrySection_openPanel summerySectionPanel_openBtn">
+                        <img src="images/ic_timeline_black_24dp.png" alt="">
+                        <span>차트 보기</span>
+                    </div>
+
+                    <div class="smrySection_option1">
+                        <select name="" id="">
+                            <option value="">마감일 순</option>
+                            <option value="">업데이트 순</option>
+                        </select>
+                    </div>
+
+                    <div class="smrySection_search">
+                        <img src="images/search.png" alt="">
+                        <input type="text" placeholder="search tasks">
+                    </div>
+
+                    <div class="smrySection_filter">
+                        필터
+                    </div>
+
+                    <div class="smrySection_navigation">
+                        <span>1-4 of 4</span>
+                        <img src="images/back.png" alt="">
+                        <img src="images/unfold.png" alt="">
+                    </div>
+                </div>
+
+                <div class="smrySection_conItemBox">
+                    <h3>이번주까지 <span>01</span></h3>
+                    <ul>
+                        <li style="border-left: 5px solid #52b166;">
+                            <div class="smrySection_conItemBox_top">
+                                <h4>Task/task01</h4>
+                                <h5>13분전에 업데이트 됨</h5>
+                            </div>
+
+                            <div class="smrySection_conItemBox_bottom">
+                                <div class="smrySection_conItemBox_bottomLeft">
+                                    <label class="control control--checkbox">
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <div class="smrySection_conItemBox_bottom_text">
+                                        <span style="background-color:#a876cc;">review review review review</span>
+                                        <h4>설계도 (1차)</h4>
+                                    </div>
+                                </div>
+
+                                <div class="smrySection_conItemBox_bottomRight">
+                                    <div class="smrySection_conItemBox_bottomRight_date">
+                                        <img src="images/ic_date_range_white_24dp.png" alt="">
+                                        <span>6월 30일</span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="images/profile_45.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="images/profile_45.png" alt="">
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="border-left: 5px solid #e95e51;">
+                            <div class="smrySection_conItemBox_top">
+                                <h4>Task/task01</h4>
+                                <h5>13분전에 업데이트 됨</h5>
+                            </div>
+
+                            <div class="smrySection_conItemBox_bottom">
+                                <div class="smrySection_conItemBox_bottomLeft">
+                                    <label class="control control--checkbox">
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <div class="smrySection_conItemBox_bottom_text">
+                                        <span style="background-color:#27b6ba">important</span>
+                                        <h4>총 예산 승인</h4>
+                                    </div>
+                                </div>
+
+                                <div class="smrySection_conItemBox_bottomRight">
+                                    <div class="smrySection_conItemBox_bottomRight_date">
+                                        <img src="images/ic_date_range_white_24dp.png" alt="">
+                                        <span>6월 30일</span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" alt="">
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li style="border-left: 5px solid #4882ab;">
+                            <div class="smrySection_conItemBox_top">
+                                <h4>Task/task01</h4>
+                                <h5>13분전에 업데이트 됨</h5>
+                            </div>
+
+                            <div class="smrySection_conItemBox_bottom">
+                                <div class="smrySection_conItemBox_bottomLeft">
+                                    <label class="control control--checkbox">
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <div class="smrySection_conItemBox_bottom_text">
+                                        <span style="background-color:#27b6ba;">follow-up</span>
+                                        <h4>디자인 시안 완료후 최종 승인 받기 디자인 시안 완료후 최종 승인 받기 디자인 시안 완료후 최종 승인 받기 디자인 시안 완료후 최종 승인 받기 디자인 시안 완료후 최종 승인 받기</h4>
+                                    </div>
+                                </div>
+
+                                <div class="smrySection_conItemBox_bottomRight">
+                                    <div class="smrySection_conItemBox_bottomRight_date">
+                                        <img src="images/ic_date_range_white_24dp.png" alt="">
+                                        <span>6월 30일</span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/a2/f0/ce/a2f0ce44cf8fdbb56dc53e1cf60b354a.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" alt="">
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="smrySection_conItemBox">
+                    <h3>마감일 없음 <span>01</span></h3>
+                    <ul>
+                        <li style="border-left: 5px solid #ffffff;">
+                            <div class="smrySection_conItemBox_top">
+                                <h4>Task/task01</h4>
+                                <h5>13분전에 업데이트 됨</h5>
+                            </div>
+
+                            <div class="smrySection_conItemBox_bottom">
+                                <div class="smrySection_conItemBox_bottomLeft">
+                                    <label class="control control--checkbox">
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                    <div class="smrySection_conItemBox_bottom_text">
+                                        <span style="background-color:#62c276;">review</span>
+                                        <h4>디자인 기획 ppt 정리하기</h4>
+                                    </div>
+                                </div>
+
+                                <div class="smrySection_conItemBox_bottomRight">
+                                    <div class="smrySection_conItemBox_bottomRight_date">
+                                        <img src="images/ic_date_range_white_24dp.png" alt="">
+                                        <span>6월 30일</span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/5e/ba/9b/5eba9b690570bd8438186f68f36bffae.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="https://s-media-cache-ak0.pinimg.com/564x/55/94/64/559464bd958c7cd8c52ba10a5204f217.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="images/profile_45.png" alt="">
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 오른쪽패널 -->
+
+            <div class="smrySection_panel">
+                <div class="smrySection_panelDiv">
+                    <img src="images/cancle.png" class="smrySection_panelClose summerySectionPanel_closeBtn" alt="">
+                    <div class="chartHideWrap">
+
+                    </div>
+                    <div class="smrySection_panelTagDiv">
+                        <div class="smrySection_panelTagItem">
+                            <span>완료</span>
+                            <img src="images/cancle.png" alt="">
+                        </div>
+
+                        <div class="smrySection_panelTagItem">
+                            <span>제 시간에 완료됨</span>
+                            <img src="images/cancle.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="smrySection_panelBox1">
+                        <div class="smrySection_panelBox1_left">
+                            <div class="smrySection_panelBox1_leftWrap">
+                                <div class="container">
+                                    <canvas id="barChart" width="260" height="260"></canvas>
+                                </div>
+                            </div>
+                            <div class="smrySection_panelBox1_chartCon">
+                                <span>4</span>
+                                <span>전체 업무</span>
+                            </div>
+                        </div>
+
+                        <div class="smrySection_panelBox1_right">
+                            <ul>
+                                <li class="smrySection_panel_li_1">
+                                    <span></span>
+                                    <h4>완료</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                                <li class="smrySection_panel_li_2">
+                                    <span></span>
+                                    <h4>마감일 지남</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                                <li class="smrySection_panel_li_3">
+                                    <span></span>
+                                    <h4>계획됨</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                                <li class="smrySection_panel_li_4">
+                                    <span></span>
+                                    <h4>마감일 없음</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                                <li class="smrySection_panel_li_5">
+                                    <span></span>
+                                    <h4>늦게 완료됨</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                                <li class="smrySection_panel_li_6">
+                                    <span></span>
+                                    <h4>제 시간에 완료됨</h4>
+                                    <h5>0 (0%)</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=smrySection_panelBox2>
+                        <ul>
+                            <li>
+                                <span></span>
+                                <p>나에게 배정된 업무</p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <p>내가 작성한 업무</p>
+                            </li>
+                            <li>
+                                <span></span>
+                                <p>내가 팔로우하는 업무</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="smrySection_panelBox3">
+                        <h1>업무 개수</h1>
+                        <div class="smrySection_panelBox3_wrap">
+                            <ul class="smrySec_lineUi">
+                                <li class="smrySec_lineLi">
+                                    <span></span>
+                                    <p>3</p>
+                                </li>
+                                <li class="smrySec_lineLi">
+                                    <span></span>
+                                    <p>2</p>
+                                </li>
+                                <li class="smrySec_lineLi">
+                                    <span></span>
+                                    <p>1</p>
+                                </li>
+                            </ul>
+
+                            <div class="smrySection_lineWrap">
+                                <ul class="smrySection_graphBoxUl">
+                                    <li class="smrySection_graphBoxLi">
+                                        <div class="smrySection_graphBoxLiWrap">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="smrySection_graphBoxConWrap">
+                                            <ul>
+                                                <li><span>12</span>
+                                                    <p>내가 팔로우한 업무</p>
+                                                </li>
+                                                <li><span>50</span>
+                                                    <p>내가 작성한 업무</p>
+                                                </li>
+                                                <li><span>1</span>
+                                                    <p>내게 배정된 업무</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p>오늘 마감</p>
+                                        <h5>0</h5>
+                                    </li>
+                                    <li class="smrySection_graphBoxLi">
+                                        <div class="smrySection_graphBoxLiWrap">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="smrySection_graphBoxConWrap">
+                                            <ul>
+                                                <li><span>12</span>
+                                                    <p>내가 팔로우한 업무</p>
+                                                </li>
+                                                <li><span>50</span>
+                                                    <p>내가 작성한 업무</p>
+                                                </li>
+                                                <li><span>1</span>
+                                                    <p>내게 배정된 업무</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p>내일 마감</p>
+                                    </li>
+                                    <li class="smrySection_graphBoxLi">
+                                        <div class="smrySection_graphBoxLiWrap">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="smrySection_graphBoxConWrap">
+                                            <ul>
+                                                <li><span>12</span>
+                                                    <p>내가 팔로우한 업무</p>
+                                                </li>
+                                                <li><span>50</span>
+                                                    <p>내가 작성한 업무</p>
+                                                </li>
+                                                <li><span>1</span>
+                                                    <p>내게 배정된 업무</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p>이번주 마감</p>
+                                    </li>
+                                    <li class="smrySection_graphBoxLi">
+                                        <div class="smrySection_graphBoxLiWrap">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="smrySection_graphBoxConWrap">
+                                            <ul>
+                                                <li><span>12</span>
+                                                    <p>내가 팔로우한 업무</p>
+                                                </li>
+                                                <li><span>50</span>
+                                                    <p>내가 작성한 업무</p>
+                                                </li>
+                                                <li><span>1</span>
+                                                    <p>내게 배정된 업무</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p>이번달 마감</p>
+                                    </li>
+                                    <li class="smrySection_graphBoxLi">
+                                        <div class="smrySection_graphBoxLiWrap">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="smrySection_graphBoxConWrap">
+                                            <ul>
+                                                <li><span>12</span>
+                                                    <p>내가 팔로우한 업무</p>
+                                                </li>
+                                                <li><span>50</span>
+                                                    <p>내가 작성한 업무</p>
+                                                </li>
+                                                <li><span>1</span>
+                                                    <p>내게 배정된 업무</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p>다음달 마감</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/piechart.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".menuDivLoad").load("menu.html", function() {
+                $(".menuLeft_top li:nth-child(3)").css({
+                    "opacity": "1",
+                    "background-color": "#154566"
+                });
+            }); //메뉴
+            $(".rightPanelLoad").load("panel.html"); //오른쪽 패널
+            $(".popupLoad").load("popup.html"); //팝업
+
+            smrySection_menuTitleBox_up();
+            SummaryRightPanelToggle(true);
+
+            var chartDiv = $("#barChart");
+            var myChart = new Chart(chartDiv, {
+                type: 'pie',
+                data: {
+                    labels: ["Pending", "InProgress", "OnHold", "Complete", "Cancelled"],
+                    datasets: [{
+                        data: [80, 20, 20, 20, 20],
+                        backgroundColor: [
+                            "#FF6384",
+                            "#4BC0C0",
+                            "#FFCE56",
+                            "#E7E9ED",
+                            "#36A2EB"
+                        ]
+                    }]
+                },
+                options: {
+                    display: true,
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    tooltips: {
+                        enabled: false
+                    }
+                }
+            });
+
+            //막대차트에 값 넣어주기
+            barChartData(0, d_0);
+            barChartData(1, d_1);
+            barChartData(2, d_2);
+            barChartData(3, d_3);
+            barChartData(4, d_4);
+
+
+            if (window.innerWidth > 1200) {
+                //웹 해상도일때 (다시 초기화해주기)
+                responsive_summary(true);
+            } else {
+                //모바일 해상도일때 (다시 초기화해주기)
+                responsive_summary(false);
+            }
+
+        });
+
+
+        //barChart 마우스 오버했을때 관련 정보 나오기
+        $(".smrySection_graphBoxLi").hover(function() {
+            var line = $(this).children("div").children("span");
+            $(line).css({
+                "display": "inline-block"
+            });
+            var box = $(this).children(".smrySection_graphBoxConWrap");
+            $(box).css({
+                "display": "inline-block"
+            }).stop().animate({
+                "opacity": "1"
+            }, 100);
+        }, function() {
+            var line = $(this).children("div").children("span");
+            $(line).css({
+                "display": "none"
+            });
+            var box = $(this).children(".smrySection_graphBoxConWrap");
+            $(box).css({
+                "display": "none"
+            }).stop().animate({
+                "opacity": "0"
+            }, 100);
+        });
+
+
+        var d_0 = [1, 0, 2];
+        var d_1 = [15, 5, 0];
+        var d_2 = [3, 5, 4];
+        var d_3 = [0, 1, 0];
+        var d_4 = [0, 1, 1];
+
+        //barChart 함수 (해당 bar의 index값, 해당 bar의 데이터 array값 변수)
+        function barChartData(index, array) {
+            var bar = $(".smrySection_graphBoxLi").eq(index); //부모 li값 선택
+            var li = $(bar).children(".smrySection_graphBoxLiWrap").children("ul").children("li");
+            var span = $(bar).children(".smrySection_graphBoxConWrap").children("ul").children("li");
+
+            var t = array.reduce(function(a, b) {
+                return a + b
+            }, 0) //배열값 전부 더하기
+            var r = t / 100; //더한값을 100으로 나눠주기
+
+            var vr = [];
+
+            for (var i = 0; i < array.length; i++) {
+                vr.push(array[i] / r); //데이터 배열값을 r로 나눠주고 새로운 배열에 저장
+            }
+
+            if (t != 0) {
+                for (var i = 0; i < array.length; i++) {
+                    $(li).eq(i).css({
+                        "height": vr[i] + "%"
+                    }); //새로운 배열에 저장된 값을 높이로 지정해주기
+                    $(span).eq(i).children("span").html(array[i]);
+                }
+            } else if (t == 0) { //값이 모두 0일때
+                for (var i = 0; i < array.length; i++) {
+                    $(li).eq(i).css({
+                        "height": 0 + "%"
+                    }); //새로운 배열에 저장된 값을 높이로 지정해주기
+                    $(span).eq(i).children("span").html(array[i]);
+                }
+            }
+        }
+
+
+        //필터보기 버튼 클릭
+        $(".smrySection_filter").click(function() {
+            SummaryRightPanelToggle(false);
+            SummaryLeftPanelToggle(true);
+        });
+
+        $(".SummaryLeft_CloseBtn").click(function() {
+            SummaryLeftPanelToggle(false);
+        });
+
+        //개요 오른쪽패널 닫기 버튼
+        $(".summerySectionPanel_closeBtn").click(function() {
+            SummaryRightPanelToggle(false);
+        });
+
+
+        //개요 오른쪽패널 열기 버튼
+        $(".summerySectionPanel_openBtn").click(function() {
+            //모바일일때
+            if (window.innerWidth < 1200) {
+                SummaryLeftPanelToggle(false);
+                $(".smrySection_panel").css({
+                    "display": "block"
+                });
+                $(".smrySection_openPanel").css({
+                    "display": "none"
+                });
+            } else {
+                SummaryRightPanelToggle(true);
+            }
+        });
+
+        //개요 왼쪽패널 타이틀 클릭시 하위내용 숨기기
+        $(".smrySection_menuTitleBox").click(function() {
+            var ul = $(this).parent(".smrySection_menuBox").children("ul");
+            var img = $(this).children("img");
+
+            if (ul.css("display") == "none") {
+                $(ul).slideDown(220);
+                $(img).attr("src", "images/fold.png");
+            } else {
+                $(ul).slideUp(220);
+                $(img).attr("src", "images/unfold.png");
+            }
+        });
+
+        //개요 업무 상단 검색이미지 누를때 input 토글
+        $(".smrySection_search img").click(function() {
+            $(".smrySection_search input").css({
+                "display": "inline-block"
+            }); //클릭할때 보이게하고
+            $(".smrySection_search input").focus(); //포커스 넣음
+        });
+
+        //개요 업무 상단 검색 input 아웃시 숨시고 포커스시 보이게하기
+        $('.smrySection_search input').on("focus blur", function() {
+            if ($(this).is(':focus') != true) {
+                console.log("아웃");
+                $(this).css({
+                    "display": "none"
+                });
+                $(".smrySection_search img").css({
+                    "display": "block"
+                });
+            }
+
+            if ($(this).is(':focus')) {
+                console.log("포커스");
+                $(this).css({
+                    "display": "inline-block"
+                });
+                $(".smrySection_search img").css({
+                    "display": "none"
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>
